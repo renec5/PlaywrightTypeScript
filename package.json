@@ -1,0 +1,21 @@
+{
+  "name": "ulta-waiting-room-playground",
+  "version": "1.0.0",
+  "description": "This repository is a playspace to be used by those waiting to join the ULTA Bella project.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wizeline/ulta-waiting-room-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wizeline/ulta-waiting-room-playground/issues"
+  },
+  "homepage": "https://github.com/wizeline/ulta-waiting-room-playground#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.31.2"
+  }
+}
