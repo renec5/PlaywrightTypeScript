@@ -9,7 +9,6 @@ test.describe('Search Something', () => {
     await homePage.searchFor('Luis Coronel')
     
     const result = await page.locator('#rso')
-    await expect(result).toContainText(
-      'Coronel'
-    )  })
+    await expect(result).toContainText('Coronel')  
+  })
 })
