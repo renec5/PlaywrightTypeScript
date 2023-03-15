@@ -7,7 +7,7 @@ const { PlaceOrderPage } = require('../pages/PlaceOrderPage');
 const { ShoppingPage } = require("../pages/ShoppingPage");
 const { APIUtils } = require('../utils/APIUtils');
 const data = JSON.parse(JSON.stringify(require('../data.json')));
-const loginPayload = {userEmail:"evilsnake_@hotmail.com",userPassword:"1983Rene@"};
+const loginPayload = {userEmail: data.username, userPassword: data.password};
 const orderPayload = {orders:[{country:"India",productOrderedId:"6262e990e26b7e1a10e89bfa"}]};
 let response;
 let apiContext;

@@ -2,20 +2,20 @@ import { Page, Locator } from "@playwright/test";
 
 export class OrdersPage{
 
-    page: Page;
-    orderRows: Locator;
-    yourOrdersLabel: Locator;
-    noOrdersAtThisTime: Locator;
-    goBackToCartBtn: Locator;
-    goBackToShop: Locator;
+    readonly page: Page;
+    readonly orderRows: Locator;
+    readonly yourOrdersLabel: Locator;
+    readonly noOrdersAtThisTime: Locator;
+    readonly goBackToCartBtn: Locator;
+    readonly goBackToShop: Locator;
 
     constructor(page: Page){
         this.page = page;
         this.orderRows = page.locator("table.table tbody tr");
         this.yourOrdersLabel = page.locator("h1.ng-star-inserted");
         this.noOrdersAtThisTime = page.locator("div.ng-star-inserted").first();
-        this.goBackToCartBtn = page.locator("button[routerlink='/dashboard/cart']").locator("text=Go Back to Cart");
-        this.goBackToShop = page.locator("button[routerlink='/dashboard/']").locator("text=Go Back to Shop");
+        this.goBackToCartBtn = page.locator("button", {hasText: "Go Back to Cart"});
+        this.goBackToShop = page.locator("button", {hasText: "Go Back to Shop"});
     }
 
     async validateOrder(orderNumber: string){

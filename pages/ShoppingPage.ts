@@ -3,11 +3,11 @@ import { Page, Locator } from "@playwright/test";
 
 export class ShoppingPage{
 
-    page: Page;
-    cartBtn: Locator;
-    products: Locator;
-    signOutBtn: Locator;
-    ordersBtn: Locator;
+    readonly page: Page;
+    readonly cartBtn: Locator;
+    readonly products: Locator;
+    readonly signOutBtn: Locator;
+    readonly ordersBtn: Locator;
 
     constructor (page){
         this.page = page;
@@ -19,7 +19,6 @@ export class ShoppingPage{
 
     async validateShoppingLandingPage(){
         await this.signOutBtn.waitFor({state: 'visible'});
-        // await this.signOutBtn.isEnabled();
         return this.signOutBtn.isVisible();
         
     }

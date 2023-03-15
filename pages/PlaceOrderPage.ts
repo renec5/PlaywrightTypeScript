@@ -2,11 +2,11 @@ import { Page, Locator } from "@playwright/test";
 
 export class PlaceOrderPage{
     
-    page: Page;
-    placeOrderBtn: Locator;
-    selectCountryField: Locator;
-    countriesToSelect: Locator;
-    countryBtns: Locator;
+    readonly page: Page;
+    readonly placeOrderBtn: Locator;
+    readonly selectCountryField: Locator;
+    readonly countriesToSelect: Locator;
+    readonly countryBtns: Locator;
     
     constructor(page){
         this.page = page;

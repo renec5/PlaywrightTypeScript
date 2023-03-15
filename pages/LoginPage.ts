@@ -2,11 +2,11 @@ import { ShoppingPage } from "../pages/ShoppingPage";
 import { Page, Locator } from "@playwright/test";
 
 export class LoginPage{
-    page: Page;
-    usernameField: Locator;
-    passwordField: Locator;
-    signInBtn: Locator;
-    shoppingPage: ShoppingPage;
+    readonly page: Page;
+    readonly usernameField: Locator;
+    readonly passwordField: Locator;
+    readonly signInBtn: Locator;
+    readonly shoppingPage: ShoppingPage;
 
     constructor(page: Page){
         this.page = page;

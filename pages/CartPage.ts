@@ -3,9 +3,9 @@ import { PlaceOrderPage } from "../pages/PlaceOrderPage";
 
 export class CartPage{
 
-    page: Page;
-    checkoutBtn: Locator;
-    placeOrderPage: PlaceOrderPage;
+    readonly page: Page;
+    readonly checkoutBtn: Locator;
+    readonly placeOrderPage: PlaceOrderPage;
 
     constructor(page){
         this.page = page;
