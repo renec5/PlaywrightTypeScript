@@ -16,6 +16,10 @@
   },
   "homepage": "https://github.com/wizeline/ulta-waiting-room-playground#readme",
   "devDependencies": {
-    "@playwright/test": "^1.31.2"
+    "@playwright/test": "^1.31.2",
+    "@types/node": "^18.15.3"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
