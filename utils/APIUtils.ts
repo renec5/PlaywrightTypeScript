@@ -1,7 +1,6 @@
-import { Page } from "@playwright/test";
 import { Request} from "express";
 
-class APIUtils{
+export class APIUtils{
 
     apiContext: Request;
     loginPayload: JSON;
@@ -61,5 +60,3 @@ class APIUtils{
         return response;
     }
 }
-
-module.exports = {APIUtils};
